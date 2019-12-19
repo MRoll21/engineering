@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Design Proces</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Design Process</a>
+  </div>
+</div>
+
+ <!--Sidebar-->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://mroll21.github.io/engineering/index">About</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://mroll21.github.io/engineering/learning_projects">Learning Projects<a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://mroll21.github.io/engineering/summative_projects">Summative projetcs</a>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+
+<div class="w3-main" style="margin-left:250px">
+
+  
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <!--body section 1-->
+      
+      <!--EDIT: project title_____________________________________________-->
+      <h1 class="w3-text-teal" style="margin-top:75px">Designing the Ramp (Spiral Design Cycle)</h1>
+      
+      <p>For this project, I will be following the spiral design cycle as described in <a href = "https://docs.google.com/document/d/1f1MmaKXj7uYPSb9OVe5SNXikbbM0Vxnf5mXyzxym6LE/edit#" target = "_blank">this document</a></p>
+      
+      <p>Mr. Rice had aready made a prototype ramp. It consists of two side walls with a 'living joint' (a flat sheet of MDF with many slots cut in it to make it flexible) to form the curve of the ramp. These are held together with finger joints (a.k.a. tabs) For my project I made a new and improved version, using the same idea but tweaking and adding to it.</p>
+      
+      <p>The origional ramp had large tabs holding it to the side wall every few inches, which left some spots unsupported. I <strong>generated the idea</strong> of having smaller tas at every point of contact.</p>
+      <img scr="images/tabDesignOld.jpg" alt="old tab placement">
+      <img scr="images/tabDesignNew.jpg" alt="new tab placement">
+      
+      <p>The next step was to <strong>design</strong> this change in CAD</p>
+      <img scr="images/cad.PNG" alt="ramp design in Fusion 360">
+      
+      <p><strong>Building</strong> this ramp was the really fun part. I learned to use the CNC router to cut the parts, then spent half an hour wrangling them so that I could add wood screws to hold the ramp together.</p>
+      <img scr="images/firstAssembly" alt="parts put together and awaiting screws">
+      <p>(it turns out that a floppy sheet of wood is rather unwieldly)</p>
+      
+      <p>Once the ramp was together, it was time to <strong>evaluate</strong> it. It was already very solid (an improvement over the first model), but there were a couple changes to be made before calling it a finished product.</p>
+      <p>First, the end of the ramp extended below the base of the side wall, so it could not sit flat</p>
+      <img scr="images/botom.jpg", alt="the end of the ramp extends to far">
+      <p>Second, the design of the ramp meant that the top surface had thin gaps were material had been cut away, producing an uneven surface</p>
+      
+      <p><strong>Generating ideas</strong> to fix these issues was fairly strghtforward. making the ramp sit flat was simply a matter of removing some material. fpr smoothing it out, a thin sheet of smooth plastic (celluplar PVC) over the top of the ramp was a quick fix.</p>
+      
+      <p>This step took very little <strong>design</strong>. All that it needed was a rectangular piece of plastic sized to match the width and length of the ramp</p>
+      
+      <p>To <strong>build</strong> the next 'iteration', I first took a kacksaw and chisel to my nice new ramp to remove the offending material from the bottom. Then, (with assistance) I cut a piece of cellular PVC on the bandsaw to fit over the top surface of the ramp, then put it in place and added a screw to hold it there.</p>
+      <p>At that point, I took a single, blurry picture to document the frinal product :(</p>
+      <img scr="images/final.jpg" alt="fully assembled ramp">
+      
+      <p>When  <strong>evaluating</strong> the ramp for the second time, I finally got to roll the <a href="https://mroll21.github.io/engineering/30_min_design/product" target="blank">car</a> down it a few times. It worked quite well; the car rolled cleanly down the ramp and made a smooth transition onto the floor.</p>
+      
+      
+      
+      
+      <!--spacer: put footer at bottom of page-->
+      <!--<p style="margin-top: 362px"></p>-->
+    </div>
+
+  </div>
+  
+  
+  <!--EDIT: prject title_________________________________________________-->
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Gravity Vehicle Ramp - Design</h4>
+    </div>
+    
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+  </div>
+
+   
+  
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
